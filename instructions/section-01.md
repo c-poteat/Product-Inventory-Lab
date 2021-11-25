@@ -6,7 +6,7 @@ Imagine you have a fantastic store where you buy/sell/trade a great product. Bus
 In this section we start with an empty Java project and start to setup our environment. Getting our testing framework in place and thinking about the objects we will create to compose the application.
 
 ### Objectives
-* Use version control to ceate and track a repository of code
+* Use version control to create and track a repository of code
 * Import a testing framework to support Test Driven Development(TDD)
 * Creating classes stubs for our products
 
@@ -37,7 +37,7 @@ git checkout dev
 or
 git checkout -b dev  //branch and chekout in one command
 ```
-Now we will always use the 'dev' branch as a starting piont to build new features and bug fixes.
+Now we will always use the 'dev' branch as a starting point to build new features and bug fixes.
 
 ## Part 2 - Testing
 
