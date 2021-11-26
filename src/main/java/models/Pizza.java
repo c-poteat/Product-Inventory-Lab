@@ -1,13 +1,11 @@
 package models;
 
-public class BarFood {
+public class Pizza {
 
-    private int numberOfGlasses;
-    private int numberOfPlates;
-    private int numberOfSilverWare;
-    private String Burgers;
-    private String Sandwiches;
-    private String ChickenBreast;
+    private String name;
+    private String cheese;
+    private String sauce;
+    private String toppings;
     private int qty;
     private float price;
 
