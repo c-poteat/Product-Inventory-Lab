@@ -1,23 +1,13 @@
 package services;
 
+import models.Beer;
+
+import java.util.ArrayList;
+
 public class BeerService {
-    private String employeeName;
-    private float employeeSalary;
 
-    public float getEmployeeSalary() {
-        return employeeSalary;
+    private static int nextId = 1; // (1)
+
+    private ArrayList<Beer> inventory = new ArrayList<>(); //  (2)
+
     }
-
-    public void setEmployeeSalary(float employeeSalary) {
-        this.employeeSalary = employeeSalary;
-    }
-
-
-    public String getEmployeeName() {
-        return employeeName;
-    }
-
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
-    }
-}

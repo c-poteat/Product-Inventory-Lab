@@ -1,23 +1,12 @@
 package services;
 
+import models.Pizza;
+
+import java.util.ArrayList;
+
 public class PizzaService {
 
-    private String employeeName;
-    private float employeeSalary;
+    private static int nextId = 1; // (1)
 
-    public float getEmployeeSalary() {
-        return employeeSalary;
-    }
-
-    public void setEmployeeSalary(float employeeSalary) {
-        this.employeeSalary = employeeSalary;
-    }
-
-    public String getEmployeeName() {
-        return employeeName;
-    }
-
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
-    }
+    private ArrayList<Pizza> inventory = new ArrayList<>(); //  (2)
 }
