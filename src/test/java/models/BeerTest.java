@@ -23,16 +23,30 @@ public class BeerTest {
   }
 
     @Test
-    public void setPriceTest() {
+    public void setTypeTest() {
         // given (1)
-        int expected = (int) 2.0;
+        String expected = "IPA";
 
         // when (2)
         beer = new Beer();
-        beer.setPrice(expected);
+        beer.setType(expected);
 
         // then (3)
 
-        Assert.assertEquals(expected, beer.getPrice());
+        Assert.assertEquals(expected, beer.getType());
+    }
+
+    @Test
+    public void setQuantityTest() {
+        // given (1)
+        int expected = 5;
+
+        // when (2)
+        beer = new Beer();
+        beer.setQuantity(expected);
+
+        // then (3)
+
+        Assert.assertEquals(expected, beer.getQuantity());
     }
 }
