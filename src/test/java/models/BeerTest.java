@@ -25,7 +25,7 @@ public class BeerTest {
     @Test
     public void setPriceTest() {
         // given (1)
-        double expected = 2.0;
+        int expected = (int) 2.0;
 
         // when (2)
         beer = new Beer();

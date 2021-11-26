@@ -2,7 +2,7 @@ package models;
 
 public class Beer {
     private String name;
-    private double price;
+    private int price;
     private int quantity;
     private String type;
 
@@ -14,7 +14,7 @@ public class Beer {
         this.type = type;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
