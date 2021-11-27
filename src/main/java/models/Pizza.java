@@ -2,6 +2,8 @@ package models;
 
 public class Pizza {
 
+
+    private int id;
     private String name;
     private String cheese;
     private String sauce;
@@ -9,8 +11,8 @@ public class Pizza {
     private int qty;
     private float price;
 
-
-    public Pizza(String name, String cheese, String toppings, int qty, float price) {
+    public Pizza(int id, String name, String cheese, String toppings, int qty, float price) {
+        this.id = id;
         this.name = name;
         this.cheese = cheese;
         this.toppings = toppings;
@@ -56,5 +58,12 @@ public class Pizza {
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

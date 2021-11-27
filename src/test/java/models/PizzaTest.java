@@ -7,7 +7,8 @@ import static org.junit.Assert.*;
 
 public class PizzaTest {
 
-    Pizza pizza = new Pizza("Sausage Pizza", "CheddarJack","Ham", 4, 4.67f);
+    Pizza pizza = new Pizza(1,"Sausage Pizza", "CheddarJack","Ham", 4, 4.67f);
+
     @Test
     public void setNameTest() {
 
@@ -94,6 +95,7 @@ public class PizzaTest {
     @Test
     public void constructorPizzaTest() {
         //Expected
+        int expectedId = 1;
         String expectedName = "Sausage Pizza";
         String expectedCheese = "CheddarJack";
         String expectedToppings = "Ham";
@@ -101,9 +103,10 @@ public class PizzaTest {
         float expectedPrice = 4.67f;
 
         //When
-        Pizza pizzaTest = new Pizza(expectedName, expectedCheese, expectedToppings, expectedQty, expectedPrice);
+        Pizza pizzaTest = new Pizza(expectedId, expectedName, expectedCheese, expectedToppings, expectedQty, expectedPrice);
 
         //Then
+        Assert.assertEquals(expectedId, pizzaTest.getId());
         Assert.assertEquals(expectedName, pizzaTest.getName());
         Assert.assertEquals(expectedCheese, pizzaTest.getCheese());
         Assert.assertEquals(expectedToppings, pizzaTest.getToppings());
