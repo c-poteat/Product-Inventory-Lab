@@ -2,7 +2,6 @@ package models;
 
 public class Pizza {
 
-
     private int id;
     private String name;
     private String cheese;

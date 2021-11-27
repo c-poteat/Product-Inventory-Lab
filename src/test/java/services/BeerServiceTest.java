@@ -9,7 +9,6 @@ public class BeerServiceTest {
  @Test
     public void createTest() {
     // (1)
-    int expectedId = 1;
     String expectedName = "DogFish";
     float expectedPrice = 4.00f;
     int expectedQty = 5;
@@ -17,7 +16,7 @@ public class BeerServiceTest {
 
     // (2)
     BeerService beerService = new BeerService();
-    Beer testBeer = beerService.create(expectedId, expectedName,expectedPrice,expectedQty,expectedType);
+    Beer testBeer = beerService.create(expectedName,expectedPrice,expectedQty,expectedType);
 
     // (3)
      int actualId = testBeer.getId();
