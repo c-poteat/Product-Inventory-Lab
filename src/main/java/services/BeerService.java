@@ -1,6 +1,7 @@
 package services;
 
 import models.Beer;
+import models.Pizza;
 
 import java.util.ArrayList;
 
@@ -18,6 +19,25 @@ public class BeerService {
         BeerInventory.add(createdBeer);
     // (4)
         return createdBeer;
+    }
+
+    // read
+    public int findBeer(int id) {
+        // should take an int and return an object with that id, if exists
+        return id;
+    }
+    // read all
+    public Beer[] findAll() {
+        // should return a basic array copy of the ArrayList
+
+        return new Beer[0];
+    }
+
+    //delete
+    public boolean delete(int id) {
+        // should remove the object with this id from the ArrayList if exits and return true.
+        // Otherwise return false
+        return false;
     }
 }
 
